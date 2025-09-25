@@ -24,7 +24,7 @@ h2 {
     border-radius: 10px;
 }
 
-img {
+.uvodni_foto {
     border-radius: 40px;
     box-shadow: 5px 5px 50px green;
     margin-left: auto;
@@ -33,7 +33,14 @@ img {
     transition: 0.5s;
 }
 
-img:hover {
+.fotos, .fotos img {
+    max-width: 1024px;
+    margin: 100px auto;
+    border-radius: 40px;
+    
+}
+
+.uvodni_foto:hover {
     transform: scale(1.1);
     transition: 0.5s;
     box-shadow: 5px 5px 50px yellow;
@@ -74,25 +81,25 @@ img:hover {
     padding: 10px;
     list-style-type: none;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
     background-color: rosybrown;
     justify-content: center;
     position: sticky;
     top: 0;
-    width: 300px;
+    width: 450px;
     border-radius: 10px;
+
 
 }
 
 .zahlavi ul li {
     background: rgb(163, 106, 106);
-    width: 100px;
+    max-width: 1024px;
+    width: 500px;
     color: rgb(0, 0, 0);
     margin: 10px;
     font-size: larger;
     border-radius: 10px;
-
 }
 
 .zahlavi ul li a {
@@ -104,9 +111,11 @@ img:hover {
 }
 
 .zahlavi ul li a:hover {
-    transform: scale(1.1);
+    border-radius: 10px;
     transition: 0.5s;
     color: white;
+    background-color: rgb(21, 171, 21);
+    
 }
 
 .zahlavi ul a.active {
@@ -115,4 +124,21 @@ img:hover {
     font-weight: bold;
     border-radius: 10px;
 
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: rgba(0, 128, 0, 0.521);
+    transition: 0.5s;
+}
+
+.videos:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 50px yellow;
 }
