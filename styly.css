@@ -33,18 +33,20 @@ h2 {
     transition: 0.5s;
 }
 
-.fotos, .fotos img {
-    max-width: 1024px;
-    margin: 100px auto;
-    border-radius: 40px;
-    
-}
-
 .uvodni_foto:hover {
     transform: scale(1.1);
     transition: 0.5s;
     box-shadow: 5px 5px 50px yellow;
 }
+
+.fotos,
+.fotos img {
+    max-width: 1024px;
+    margin: 100px auto;
+    border-radius: 40px;
+
+}
+
 
 .videoList {
     display: inline-block;
@@ -76,33 +78,47 @@ h2 {
     color: rgb(255, 255, 255);
 }
 
-.zahlavi ul {
-    margin: 0;
+.zahlavi {
     padding: 10px;
     list-style-type: none;
-    display: flex;
-    margin:auto;
+
+    margin: auto;
     background-color: rosybrown;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    width: 450px;
+
+    max-width: 1024px;
+    width: 700px;
     border-radius: 10px;
 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
 
 }
 
+.zahlavi ul {
+    margin: 0;
+    padding: 10px;
+    width: 450px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
 .zahlavi ul li {
-    background: rgb(163, 106, 106);
+    background-color: rgb(163, 106, 106);
     max-width: 1024px;
-    width: 500px;
+    width: 800px;
     color: rgb(0, 0, 0);
     margin: 10px;
     font-size: larger;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .zahlavi ul li a {
+    width: 100px;
     text-decoration: none;
     color: black;
     display: block;
@@ -110,15 +126,19 @@ h2 {
     padding: 14px 16px;
 }
 
-.zahlavi ul li a:hover {
+.zahlavi ul li:hover {
     border-radius: 10px;
+    transform: scale(1.1);
     transition: 0.5s;
-    color: white;
     background-color: rgb(21, 171, 21);
-    
+
 }
 
-.zahlavi ul a.active {
+.zahlavi ul li a:hover{
+    color: white;
+}
+
+.zahlavi ul li a.active {
     background: green;
     color: white;
     font-weight: bold;
@@ -138,7 +158,35 @@ h2 {
     transition: 0.5s;
 }
 
+.videos iframe {
+    border: none;
+    border-radius: 20px;
+}
+
 .videos:hover {
     transition: 0.5s;
     box-shadow: 5px 5px 50px yellow;
+}
+
+button {
+    display: block;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    width: 160px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    background-color: rgb(163, 106, 106);
+
+}
+
+button:hover{
+    background-color: green;
+    transition: 0.2s;
+}
+
+button.active {
+    background-color: red;
 }

@@ -6,28 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotky</title>
     <link rel="stylesheet" href="styly.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
     <!--záhlaví-->
+
     <div class="zahlavi">
         <ul>
             <li><a href="index.html">Domů
-                <i class="fa-solid fa-house"></i>
-            </a></li>
+                    <i class="fa-solid fa-house"></i>
+                </a></li>
 
             <li><a href="videa.html">Videa
-                <i class="fa-solid fa-square-caret-right"></i>
-            </a></li>
+                    <i class="fa-solid fa-square-caret-right"></i>
+                </a></li>
 
             <li><a class="active" href="fotky.html">Fotky
-                <i class="fa-solid fa-camera-retro"></i>
-            </a></li>
+                    <i class="fa-solid fa-camera-retro"></i>
+                </a></li>
+            <li>
+                <button id="music-button">Hudbička
+                    <i class="fa-solid fa-music"></i>
+                </button>
+            </li>
         </ul>
     </div>
 
+    <script src="tlacitko_hudby.js"></script>
+    <audio id="music" src="Who_Wants_to_be_a_Millionaire_Suspense.mp3"></audio>
+
+
     <h1>FOTKY</h1>
+
+
     <div class="fotos">
         <img src="obrazky/20250213_201250.jpg" alt="myval 1">
         <img src="obrazky/56a92983f0f1afe6513f67d81219785e.jpg" alt="myval 2">
