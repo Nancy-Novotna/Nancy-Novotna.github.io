@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotky</title>
     <link rel="stylesheet" href="styly.css">
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -17,27 +17,28 @@
 
 <body>
     <!--záhlaví-->
+    <header class="zahlavi">
+        <div>
+            <ul>
+                <li><a href="index.html">Domů
+                        <i class="fa-solid fa-house"></i>
+                    </a></li>
 
-    <div class="zahlavi">
-        <ul>
-            <li><a href="index.html">Domů
-                    <i class="fa-solid fa-house"></i>
-                </a></li>
+                <li><a href="videa.html">Videa
+                        <i class="fa-brands fa-youtube"></i>
+                    </a></li>
 
-            <li><a href="videa.html">Videa
-                    <i class="fa-brands fa-youtube"></i>
-                </a></li>
-
-            <li><a class="active" href="fotky.html">Fotky
-                    <i class="fa-solid fa-camera-retro"></i>
-                </a></li>
-            <li>
-                <button id="music-button">Hudbička
-                    <i class="fa-solid fa-music"></i>
-                </button>
-            </li>
-        </ul>
-    </div>
+                <li><a class="active" href="fotky.html">Fotky
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </a></li>
+                <li>
+                    <button id="music-button">Hudbička
+                        <i class="fa-solid fa-music"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
 
     <script src="tlacitko_hudby.js"></script>
     <audio id="music" src="Who_Wants_to_be_a_Millionaire_Suspense.mp3"></audio>
@@ -53,12 +54,44 @@
         <img src="obrazky/af49851a222e845641e16aaced78010c.jpg" alt="myval 4">
     </div>
 
-    <div>
-        <ul class="zapati">
+    <footer class="zapati">
+        <ul class="kontakty">
             <li>Nancy Novotná, 3. D</li>
             <li>D23974@oa-opava.cz</li>
         </ul>
-    </div>
+        <div class="formy">
+            <ul>
+                <h4>Přihlásit se</h4>
+                <form class="registrace">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Heslo</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                        </div>
+                        <button type="submit" class="btn">Přihlásit</button>
+                </form>
+            </ul>
+            <ul>
+                <h4>Zaregistruj se!</h4>
+                <form class="registrace">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Heslo</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                        </div>
+                        <button type="submit" class="btn">Potvrdit</button>
+                </form>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
