@@ -5,6 +5,10 @@ body {
 }
 
 h1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     margin-top: 100px;
     text-align: center;
     background-color: black;
@@ -17,6 +21,10 @@ h1 {
 }
 
 h2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     margin-left: auto;
     margin-right: auto;
     background-color: rosybrown;
@@ -25,6 +33,10 @@ h2 {
 }
 
 .uvodni_foto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     border-radius: 40px;
     box-shadow: 5px 5px 50px green;
     margin-left: auto;
@@ -262,6 +274,10 @@ h4 {
     align-items: flex-end;
 }
 
- .formy .fa-envelope {
-    align-items: flex-start;
+.fa-envelope {
+    color: rgb(85, 84, 84);
+}
+
+.fa-key {
+    color: rgb(85, 84, 84);
 }
