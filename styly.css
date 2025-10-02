@@ -84,13 +84,12 @@ h2 {
 
     margin: auto;
     background-color: rosybrown;
-
-    max-width: 1024px;
-    width: 700px;
+    max-width: fit-content;
     border-radius: 10px;
 
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     position: sticky;
     top: 0;
@@ -100,16 +99,17 @@ h2 {
 .zahlavi ul {
     margin: 0;
     padding: 10px;
-    width: 450px;
     list-style-type: none;
+
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
 }
 
 .zahlavi ul li {
     background-color: rgb(163, 106, 106);
-    max-width: 1024px;
-    width: 800px;
+
     color: rgb(0, 0, 0);
     margin: 10px;
     font-size: larger;
@@ -118,7 +118,6 @@ h2 {
 }
 
 .zahlavi ul li a {
-    width: 100px;
     text-decoration: none;
     color: black;
     display: block;
@@ -198,6 +197,7 @@ button.active {
     margin: 0;
     margin-top: 150px;
     border-radius: 15px;
+    max-width: 2108px;
 
     display: flex;
     flex-direction: row;
@@ -210,7 +210,6 @@ button.active {
     list-style-type: none;
 
     border-radius: 5px;
-    width: 210px;
     margin: 5px;
 
     font-size: larger;
@@ -224,8 +223,9 @@ h4 {
 
 .form-label {
     display: flex;
+    align-items: center;
     text-align: left;
-    justify-content: space-between;
+    gap: 8px;
     margin: 3px;
 }
 
@@ -249,6 +249,7 @@ h4 {
 .zapati .formy {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .kontakty {
@@ -259,4 +260,8 @@ h4 {
     margin-right: 50px;
     font-family: 'Oswald', sans-serif;
     align-items: flex-end;
+}
+
+ .formy .fa-envelope {
+    align-items: flex-start;
 }
