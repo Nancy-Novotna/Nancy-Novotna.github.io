@@ -15,24 +15,24 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
-<body>
+<main>
     <!--záhlaví-->
     <header class="zahlavi">
         <div>
             <ul>
-                <li><a href="index.html">Domů
+                <li><a href="index.html"><span>Domů</span>
                         <i class="fa-solid fa-house"></i>
                     </a></li>
 
-                <li><a class="active" href="videa.html">Videa
+                <li><a class="active" href="videa.html"><span>Videa</span>
                         <i class="fa-brands fa-youtube"></i>
                     </a></li>
 
-                <li><a href="fotky.html">Fotky
+                <li><a href="fotky.html"><span>Fotky</span>
                         <i class="fa-solid fa-camera-retro"></i>
                     </a></li>
                 <li>
-                    <button id="music-button">Hudbička
+                    <button id="music-button"><span>Hudbička</span>
                         <i class="fa-solid fa-music"></i>
                     </button>
                 </li>
@@ -62,40 +62,58 @@
         <ul class="kontakty">
             <li>Nancy Novotná, 3. D</li>
             <li>D23974@oa-opava.cz</li>
+            <button class="validate"><a href="https://validator.w3.org/nu/" target="_blank">Validace stránky
+                            (nefunguje)</a></button>
         </ul>
+
         <div class="formy">
-            <ul>
+            <form class="registrace">
                 <h4>Přihlásit se</h4>
-                <form class="registrace">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">
+                        <i class="fa-solid fa-envelope"></i>
+                        Email
+                    </label>
+
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Heslo</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                        </div>
+                        <label for="exampleInputPassword1" class="form-label">
+                            <i class="fa-solid fa-key"></i>
+                            Heslo
+                        </label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
                         <button type="submit" class="btn">Přihlásit</button>
-                </form>
-            </ul>
-            <ul>
-                <h4>Zaregistruj se!</h4>
+                    </div>
+                </div>
+            </form>
+            <div>
                 <form class="registrace">
+                    <h4>Zaregistruj se!</h4>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="exampleInputEmail1" class="form-label">
+                            <i class="fa-solid fa-envelope"></i>
+                            Email
+                        </label>
+
+                        <input type="email" class="form-control" placeholder="" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Heslo</label>
+                            <label for="exampleInputPassword1" class="form-label">
+                                <i class="fa-solid fa-key"></i>
+                                Heslo
+                            </label>
                             <input type="password" class="form-control" id="exampleInputPassword1">
                         </div>
                         <div class="mb-3 form-check">
+                            <button type="submit" class="btn">Potvrdit</button>
                         </div>
-                        <button type="submit" class="btn">Potvrdit</button>
+                    </div>
                 </form>
-            </ul>
+            </div>
         </div>
     </footer>
-</body>
+</main>
 
 </html>
