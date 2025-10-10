@@ -31,12 +31,13 @@ h2 {
     max-width: fit-content;
 
     border-radius: 40px;
-    box-shadow: 5px 5px 50px green;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 100px auto;
     margin-top: 5%;
     transition: 0.5s;
+
+    animation: duhaAnimation 5s infinite;
 }
+
 
 .uvodni_foto:hover {
     transform: scale(1.1);
@@ -317,6 +318,28 @@ h4 {
     color: rgb(21, 43, 14);
 }
 
+@keyframes duhaAnimation {
+    0% {
+        box-shadow: 5px 5px 50px red;
+    }
+
+    25% {
+        box-shadow: 5px 5px 50px yellow;
+    }
+
+    50% {
+        box-shadow: 5px 5px 50px blue;
+    }
+
+    75% {
+        box-shadow: 5px 5px 50px green;
+    }
+
+    100% {
+        box-shadow: 5px 5px 50px red;
+    }
+}
+
 @media(max-width: 500px) {
     body {
         background-image: url(Selsky_les.jpg);
@@ -339,42 +362,40 @@ h4 {
         display: none;
     }
 
-    /*
     .zapati {
-        display: block;
-    }
-        */
-
-    .zapati{
         display: flex;
         flex-wrap: wrap;
     }
-    
-    .zapati ul{
+
+    .zapati ul {
         display: flex;
         align-items: center;
         flex-direction: column;
-        
+
         margin: auto;
         padding: 15px;
     }
 
-    .zapati ul li{
+    .zapati ul li {
         width: 200px;
     }
 
-    .validate{
+    .validate {
         width: 200px;
         margin-top: 3px
     }
 
-    .formy{
+    .formy {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
 
         margin-right: 60px;
-        
-        
+    }
+
+    .fotos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }
