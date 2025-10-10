@@ -157,10 +157,10 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 80px;
-    
+
     width: 100%;
     max-width: 600px;
-    
+
     margin: 100px auto;
     padding: 50px;
     border-radius: 20px;
@@ -230,17 +230,17 @@ button.active {
 
 
 
-.validate{
+.validate {
     background-color: rgb(20, 75, 13);
     transition: 0.5;
 }
 
-.validate a{
+.validate a {
     text-decoration: none;
     color: white;
 }
 
-.validate:hover{
+.validate:hover {
     background-color: red;
     transform: scale(1.1);
     transition: 0.5;
@@ -267,7 +267,7 @@ h4 {
 }
 
 .btn {
-    width: 175px;  
+    width: 175px;
     margin-top: 10px;
     background-color: rgb(1, 63, 7);
     color: white;
@@ -284,7 +284,7 @@ h4 {
     margin-bottom: 20px;
 }
 
-.validate button{
+.validate button {
     background-color: darkgreen;
     width: auto;
     height: 30px;
@@ -292,12 +292,12 @@ h4 {
     transition: 1.1;
 }
 
-.validate button a{
+.validate button a {
     text-decoration: none;
     color: white;
 }
 
-.validate button:hover{
+.validate button:hover {
     background-color: red;
     transform: scale(1.1);
     transition: 1.1;
@@ -317,31 +317,64 @@ h4 {
     color: rgb(21, 43, 14);
 }
 
-@media(max-width: 500px){
-    body{
+@media(max-width: 500px) {
+    body {
         background-image: url(Selsky_les.jpg);
     }
 
-    #smartphone{
+    #smartphone {
         display: block;
     }
 
-    .videos{
+    .videos {
         width: 210px;
     }
 
-    .videos iframe{
+    .videos iframe {
         width: auto;
     }
 
 
-    .zahlavi ul li a span{
+    .zahlavi ul li a span {
         display: none;
     }
 
+    /*
+    .zapati {
+        display: block;
+    }
+        */
 
     .zapati{
-        width: 420px;
-        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .zapati ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        margin: auto;
+        padding: 15px;
+    }
+
+    .zapati ul li{
+        width: 200px;
+    }
+
+    .validate{
+        width: 200px;
+        margin-top: 3px
+    }
+
+    .formy{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        margin-right: 60px;
+        
+        
     }
 }
