@@ -1,0 +1,47 @@
+:root {
+    --main-dark-green: #666547;
+    --main-red: #fb2e01;
+    --main-light-green: #6fcb9f;
+    --main-yellow: #ffe25a;
+    --main-beige: #fffeb3;
+
+}
+
+body {
+    text-align: center;
+    background-image: linear-gradient(to right, var(--main-beige) 0%, var(--main-yellow) 100%);
+}
+
+.zahlavi {
+    background: var(--main-red);
+    width: 100%;
+    padding: 0 40px;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.zahlavi ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+
+
+    
+}
+
+.zahlavi ul li {
+    color: var(--main-light-green);
+}
+
+.zahlavi ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    color: var(--main-dark-green);
+}
