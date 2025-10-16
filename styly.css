@@ -233,7 +233,7 @@ button.active {
 
 .validate {
     background-color: rgb(20, 75, 13);
-    transition: 0.5;
+    transition: 0.5s;
 }
 
 .validate a {
@@ -244,7 +244,7 @@ button.active {
 .validate:hover {
     background-color: red;
     transform: scale(1.1);
-    transition: 0.5;
+    transition: 0.5s;
 }
 
 h4 {
@@ -290,7 +290,7 @@ h4 {
     width: auto;
     height: 30px;
     margin: 50px auto;
-    transition: 1.1;
+    transition: 1.1s;
 }
 
 .validate button a {
@@ -301,7 +301,7 @@ h4 {
 .validate button:hover {
     background-color: red;
     transform: scale(1.1);
-    transition: 1.1;
+    transition: 1.1s;
 }
 
 .zapati .registrace {
@@ -316,6 +316,12 @@ h4 {
 
 .fa-key {
     color: rgb(21, 43, 14);
+}
+
+.w3c {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 @keyframes duhaAnimation {
