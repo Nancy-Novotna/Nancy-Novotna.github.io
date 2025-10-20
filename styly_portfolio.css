@@ -1,47 +1,75 @@
 :root {
-    --main-dark-green: #666547;
-    --main-red: #fb2e01;
-    --main-light-green: #6fcb9f;
-    --main-yellow: #ffe25a;
-    --main-beige: #fffeb3;
+    --main-shade1: #b2d8d8;
+    --main-shade2: #66b2b2;
+    --main-shade3: #008080;
+    --main-shade4: #006666;
+    --main-shade5: #004c4c;
 
 }
 
 body {
+    margin: 0;
+    padding: 0;
     text-align: center;
-    background-image: linear-gradient(to right, var(--main-beige) 0%, var(--main-yellow) 100%);
 }
 
 .zahlavi {
-    background: var(--main-red);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 0 40px;
-    margin: 0;
+
+    background: var(--main-shade3);
+    padding: 10px 20px;
+    margin: auto;
     box-sizing: border-box;
-    
+
+    z-index: 100000;
+    box-shadow: inset 0 -6px 6px -6px black;
+
 }
 
 .zahlavi ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     list-style: none;
-    padding: 0;
     margin: 0;
     gap: 20px;
-
-
-    
 }
 
 .zahlavi ul li {
+    background-color: var(--main-shade1);
     color: var(--main-light-green);
+    border-radius: 10px;
+    width: 80px;
+    font-size: larger;
 }
 
 .zahlavi ul li a {
     text-decoration: none;
     color: black;
+    transition: 0.5s;
+}
+
+.zahlavi ul li a:hover {
+    color: rgb(2, 163, 2);
+    transform: scale(0.5s);
+    transition: 0.5s;
 }
 
 h1 {
     color: var(--main-dark-green);
+}
+
+.uvod {
+    background-image: linear-gradient(to bottom, var(--main-shade5) 0%, var(--main-shade4) 100%);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
