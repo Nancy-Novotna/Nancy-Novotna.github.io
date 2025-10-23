@@ -32,10 +32,10 @@ body {
 }
 
 .zahlavi ul {
-    display: flex;
-    justify-content: flex-start;
     list-style: none;
-    margin: 0;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
     gap: 20px;
 }
 
@@ -45,6 +45,7 @@ body {
     border-radius: 10px;
     width: 80px;
     font-size: larger;
+    padding: 5px;
 }
 
 .zahlavi ul li a {
