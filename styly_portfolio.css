@@ -74,3 +74,18 @@ h1 {
     flex-wrap: wrap;
     flex-direction: column;
 }
+
+p {
+    width: 60%;
+}
+
+.projekty {
+    background-image: linear-gradient(to bottom, var(--main-shade4) 0%, var(--main-shade2) 100%);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
