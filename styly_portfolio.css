@@ -89,3 +89,13 @@ p {
     flex-wrap: wrap;
     flex-direction: column;
 }
+
+.projekt {
+    
+}
+
+.obrazek_projekty {
+    object-fit: fit;
+    height: calc(100% - 6.8rem);
+    width: 100%;
+}
