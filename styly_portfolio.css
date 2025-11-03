@@ -7,6 +7,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -41,22 +45,28 @@ body {
 
 .zahlavi ul li {
     background-color: var(--main-shade1);
-    color: var(--main-light-green);
     border-radius: 10px;
     width: 80px;
     font-size: larger;
     padding: 5px;
+    transition: 0.5s;
 }
 
 .zahlavi ul li a {
     text-decoration: none;
     color: black;
     transition: 0.5s;
+    padding: 10px;
+}
+
+.zahlavi ul li:hover {
+    background-color: var(--main-shade4);
+    transform: scale(0.5s);
+    transition: 0.5s;
 }
 
 .zahlavi ul li a:hover {
-    color: rgb(2, 163, 2);
-    transform: scale(0.5s);
+    color: white;
     transition: 0.5s;
 }
 
@@ -75,13 +85,18 @@ h1 {
     flex-direction: column;
 }
 
-p {
-    width: 60%;
+.projekty_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+
 }
 
 .projekty {
     background-image: linear-gradient(to bottom, var(--main-shade4) 0%, var(--main-shade2) 100%);
-    height: 100vh;
 
     display: flex;
     justify-content: center;
@@ -91,11 +106,20 @@ p {
 }
 
 .projekt {
-    
+    background-image: linear-gradient(to top, var(--main-shade4) 0%, var(--main-shade3) 20%);
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
 }
 
 .obrazek_projekty {
-    object-fit: fit;
-    height: calc(100% - 6.8rem);
+    object-fit: cover;
+    height: calc(100% - 9.8rem);
     width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.nadpis_projektu {
+    font-size: 1.5rem;
+    padding: 2rem 0.5rem;
 }
