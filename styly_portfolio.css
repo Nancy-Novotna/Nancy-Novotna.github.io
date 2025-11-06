@@ -70,7 +70,7 @@ body {
     transition: 0.5s;
 }
 
-.zahlavi ul li a:hover {
+.zahlavi ul li:hover a{
     color: white;
 }
 
