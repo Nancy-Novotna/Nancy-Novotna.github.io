@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Nancy</title>
     <link rel="stylesheet" href="styly_portfolio.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&family=Oswald:wght@200..700&family=Quintessential&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
 </head>
 
 <body>
@@ -20,25 +31,48 @@
     </nav>
 
     <section id="uvod" class="uvod">
-        <h1>HELLO THERE</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, excepturi. Nostrum officiis voluptas aliquam
-            reprehenderit eaque voluptatum magni, repellat, harum, iusto officia ipsa facere! Quibusdam accusantium
-            facere ducimus sint aut?</p>
+        <h1 class="uvod_nadpis">Ahoj, jsem Nancy Novotná</h1>
+        <p class="uvod_podnadpis">studentka IT</p>
     </section>
 
     <section id="projekty" class="projekty">
+        <h1 class="projekty_nadpis">Mé projekty</h1>
+
         <div class="projekty_grid">
+
             <a class="projekt" href="https://nancy-novotna.github.io/myvali-stranka/" target="_blank">
                 <img class="obrazek_projekty"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Procyon_lotor_%28Common_raccoon%29.jpg/500px-Procyon_lotor_%28Common_raccoon%29.jpg"
                     alt="projekt_1">
-                <p class="nadpis_projektu">Mývalí stránka</p>
+                <p class="nadpis_projektu">
+                    <span class="slunicko">&#9728;</span>
+                    Mývalí stránka
+                    <span class="slunicko">&#9728;</span>
+                </p>
             </a>
 
             <a class="projekt" href="https://nancy-novotna.github.io/Google-search/" target="_blank">
                 <img class="obrazek_projekty" src="google_search.png" alt="projekt_2">
+                <p class="nadpis_projektu">
+                    <span class="slunicko">&#9728;</span>
+                    Google search
+                    <span class="slunicko">&#9728;</span>
+                </p>
             </a>
         </div>
+    </section>
+
+    <section id="kontakt" class="kontakt">
+
+        <h1 class="kontakt_nadpis">Kontakt na mě</h1>
+
+        <div class="kontakty">
+            <p class="kontakt_email">
+                <i class="fa-solid fa-envelope"></i>
+                : D23974@oa-opava.cz
+            </p>
+        </div>
+
     </section>
 
 </body>

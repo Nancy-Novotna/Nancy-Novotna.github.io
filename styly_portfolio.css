@@ -57,6 +57,7 @@ body {
     color: black;
     transition: 0.5s;
     padding: 10px;
+    font-family: "Oswald", sans-serif;
 }
 
 .zahlavi ul li:hover {
@@ -75,7 +76,7 @@ h1 {
 }
 
 .uvod {
-    background-image: linear-gradient(to bottom, var(--main-shade5) 0%, var(--main-shade4) 100%);
+    background-color: var(--main-shade5);
     height: 100vh;
 
     display: flex;
@@ -85,28 +86,61 @@ h1 {
     flex-direction: column;
 }
 
+.uvod_nadpis {
+    font-size: 5rem;
+    font-family: "Teko", sans-serif;
+    margin: 0;
+    color: var(--main-shade1);
+}
+
+.uvod_podnadpis {
+    font-size: 2.5rem;
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    color: var(--main-shade2);
+}
+
 .projekty_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 4rem;
     max-width: 1080px;
     margin: 0 auto;
-    margin-bottom: 6rem;
-
 }
 
 .projekty {
-    background-image: linear-gradient(to bottom, var(--main-shade4) 0%, var(--main-shade2) 100%);
+    background-color: var(--main-shade2);
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    padding: 4rem;
+}
+
+.projekty_nadpis {
+    font-size: 4rem;
+    font-family: "Teko", sans-serif;
+    margin: 4rem 0 2rem 0;
+    margin-bottom: 4rem;
+    color: var(--main-shade5);
+}
+
+
+.slunicko {
+    color: var(--main-shade3);
+    transition: 0.3s ease-out;
+}
+
+.projekt:hover .slunicko {
+    color: rgb(255, 204, 0);
+    transition: 0.3s ease-out;
+
 }
 
 .projekt {
-    background-image: linear-gradient(to top, var(--main-shade4) 0%, var(--main-shade3) 20%);
+    background-color: var(--main-shade3);
     border-radius: 5px;
     text-decoration: none;
     color: black;
@@ -120,6 +154,35 @@ h1 {
 }
 
 .nadpis_projektu {
-    font-size: 1.5rem;
-    padding: 2rem 0.5rem;
+    font-size: 35px;
+    padding: 14px 0;
+    font-family: "Teko", sans-serif;
+}
+
+.kontakt {
+    background-color: var(--main-shade1);
+    height: 100vh;
+
+}
+
+.kontakty {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.kontakt_nadpis {
+    font-size: 4rem;
+    font-family: "Teko", sans-serif;
+    margin: 0;
+    color: var(--main-shade4);
+}
+
+.kontakt_email {
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    color: var(--main-shade5);
 }
