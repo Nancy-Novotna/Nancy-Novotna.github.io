@@ -71,10 +71,6 @@ body {
     transition: 0.5s;
 }
 
-h1 {
-    color: var(--main-dark-green);
-}
-
 .uvod {
     background-color: var(--main-shade5);
     height: 100vh;
@@ -151,6 +147,7 @@ h1 {
     height: calc(100% - 9.8rem);
     width: 100%;
     border-radius: 5px 5px 0 0;
+    transition: 0.3s;
 }
 
 .nadpis_projektu {
@@ -161,28 +158,71 @@ h1 {
 
 .kontakt {
     background-color: var(--main-shade1);
-    height: 100vh;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .kontakty {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
-    max-width: 1080px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2.5rem;
+
 }
 
 .kontakt_nadpis {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: "Teko", sans-serif;
-    margin: 0;
-    color: var(--main-shade4);
+    color: var(--main-shade5);
 }
 
 .kontakt_email {
     font-size: 2rem;
     font-family: "Oswald", sans-serif;
     margin: 0;
+    color: var(--main-shade4);
+
+}
+
+.kontakt_ikonka {
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    color: var(--main-shade4);
+    transition: 0.3s;
+
+
+}
+
+.kontakt_ikonka a {
+    text-decoration: none;
+    color: var(--main-shade4);
+    transition: 0.3s;
+
+}
+
+.kontakt_ikonka:hover {
+    transform: rotate(5deg);
+    transition: 0.3s;
+}
+
+footer {
+    background-color: var(--main-shade2);
+    border-top: 5px solid var(--main-shade5);
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer p {
+    font-size: medium;
+    margin: 10px 20px;
+    font-family: "Oswald", sans-serif;
     color: var(--main-shade5);
 }
