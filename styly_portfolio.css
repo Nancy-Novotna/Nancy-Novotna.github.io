@@ -19,7 +19,8 @@ body {
 
 .zahlavi {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -37,8 +38,8 @@ body {
 
 .zahlavi ul {
     list-style: none;
-    margin: 10px;
-    padding: 15px;
+    margin: 0;
+    padding: 0;
     display: flex;
     gap: 20px;
 }
@@ -71,8 +72,15 @@ body {
     transition: 0.5s;
 }
 
+.N {
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
 .uvod {
-    background-color: var(--main-shade5);
+    background-image: linear-gradient(to bottom, var(--main-shade5) 0%, var(--main-shade4) 100%);
     height: 100vh;
 
     display: flex;
@@ -110,7 +118,7 @@ body {
 }
 
 .projekty {
-    background-color: var(--main-shade4);
+    background-image: linear-gradient(to bottom, var(--main-shade4) 0%, var(--main-shade2) 100%);
     height: 100vh;
 
     display: flex;
@@ -126,14 +134,15 @@ body {
     font-family: "Teko", sans-serif;
     margin: 4rem 0 2rem 0;
     margin-bottom: 6rem;
-    color: var(--main-shade4);
+    color: var(--main-shade5);
 
-    text-shadow: 2px 2px 20px;
+    text-shadow: 2px 2px 50px whitesmoke;
 }
 
 .slunicko {
-    color: var(--main-shade3);
+    color: var(--main-shade4);
     transition: 0.3s ease-out;
+    text-shadow: none;
 }
 
 .projekt:hover .slunicko {
@@ -143,7 +152,7 @@ body {
 }
 
 .projekt {
-    background-color: var(--main-shade1);
+    background-color: var(--main-shade4);
     border-radius: 5px;
     text-decoration: none;
     color: black;
@@ -184,10 +193,12 @@ body {
     font-size: 35px;
     padding: 14px 0;
     font-family: "Teko", sans-serif;
+
+    text-shadow: 2px 2px 8px whitesmoke;
 }
 
 .kontakt {
-    background-image: linear-gradient( to  var(--main-shade1)) var(--main-shade1);
+    background-image: linear-gradient(to bottom, var(--main-shade2) 0%, var(--main-shade1) 100%);
     height: 100vh;
 
     display: flex;
