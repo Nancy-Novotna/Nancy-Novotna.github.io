@@ -63,7 +63,7 @@ body {
 
 .zahlavi ul li:hover {
     background-color: var(--main-shade4);
-    transform: scale(0.5s);
+    transform: scale(0.5);
     transition: 0.5s;
 }
 
@@ -253,13 +253,20 @@ footer {
     background-color: var(--main-shade2);
     border-top: 5px solid var(--main-shade5);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.validace {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 footer p {
     font-weight: bold;
     font-size: medium;
-    margin: 10px 20px;
+    margin: 15px 25px;
     font-family: "Oswald", sans-serif;
     color: var(--main-shade5);
 }
