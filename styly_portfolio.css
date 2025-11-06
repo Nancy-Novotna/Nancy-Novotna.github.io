@@ -57,7 +57,7 @@ body {
     display: block;
     text-decoration: none;
     color: black;
-    transition: 0.5s;
+    transition: 0.3s;
     font-family: "Oswald", sans-serif;
 
     width: 100%;
@@ -66,8 +66,8 @@ body {
 
 .zahlavi ul li:hover {
     background-color: var(--main-shade4);
-    transform: scale(0.5s);
-    transition: 0.5s;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .zahlavi ul li:hover a{
