@@ -141,7 +141,7 @@ h2 {
 
 }
 
-.zahlavi ul li a:hover {
+.zahlavi ul li :hover a {
     color: white;
 }
 
