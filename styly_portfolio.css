@@ -150,6 +150,37 @@ body {
     transition: 0.3s;
 }
 
+.ramecek {
+    width: 100%;
+    height: calc(100% - 9.8rem);
+    overflow: hidden;
+    /* důležité: ořezávání při zoomu */
+    border-radius: 10px;
+    position: relative;
+}
+
+.ramecek img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%) scale(1);
+    /* výchozí velikost a centrování */
+    transform-origin: center center;
+    transition: transform 0.5s ease;
+    /* volitelně: bude zajištěno, že obrázek nikdy „nevodí“ layoutu */
+    max-width: none;
+    max-height: none;
+}
+
+.ramecek:hover img {
+    transform: translate(-50%, -50%) scale(1.2);
+    /* nastav max zoom, např. 1.2 */
+    transition: transform 0.5s ease;
+}
+
 .nadpis_projektu {
     font-size: 35px;
     padding: 14px 0;
