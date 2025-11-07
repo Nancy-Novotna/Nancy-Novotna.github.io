@@ -229,12 +229,17 @@ button.active {
     text-decoration: none;
 }
 
-
+.validace {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 .validate {
     background-color: rgb(20, 75, 13);
     transition: 0.5s;
 }
+    
 
 .validate a {
     text-decoration: none;
