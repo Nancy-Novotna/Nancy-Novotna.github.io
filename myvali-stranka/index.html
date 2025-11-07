@@ -16,9 +16,10 @@
 </head>
 
 <main>
-    <!--záhlaví-->
+
     <header class="zahlavi">
-        <div>
+        <!--zahlavi CS-->
+        <div class="story" lang="cs">
             <ul>
                 <li><a class="active" href="index.html"><span>Domů</span>
                         <i class="fa-solid fa-house"></i>
@@ -32,7 +33,29 @@
                         <i class="fa-solid fa-camera-retro"></i>
                     </a></li>
                 <li>
-                    <button id="music-button"><span>Hudbička</span>
+                    <button class="music-button"><span>Hudbička</span>
+                        <i class="fa-solid fa-music"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!--zahlavi EN-->
+        <div class="story" lang="en">
+            <ul>
+                <li><a class="active" href="index.html"><span>Home</span>
+                        <i class="fa-solid fa-house"></i>
+                    </a></li>
+
+                <li><a href="videa.html"><span>Videos</span>
+                        <i class="fa-brands fa-youtube"></i>
+                    </a></li>
+
+                <li><a href="fotky.html"><span>Photos</span>
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </a></li>
+                <li>
+                    <button class="music-button"><span>Music</span>
                         <i class="fa-solid fa-music"></i>
                     </button>
                 </li>
@@ -40,14 +63,24 @@
         </div>
     </header>
 
-
     <script src="tlacitko_hudby.js"></script>
     <audio id="music" src="Who_Wants_to_be_a_Millionaire_Suspense.mp3"></audio>
 
 
-    <h1>Mýval Severní</h1>
+    <div class="story" lang="cs">
+        <h1>Mýval Severní</h1>
+    </div>
+    <div class="story" lang="en">
+        <h1>Raccoon</h1>
+    </div>
 
-    <h2>Náhodná stránka a mývalech, protože proč ne.</h2>
+    <div class="story" lang="cs">
+        <h2>Náhodná stránka a mývalech, protože proč ne.</h2>
+    </div>
+
+    <div class="story" lang="en">
+        <h2>Random web about raccoons because why not.</h2>
+    </div>
 
     <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1" target="_blank">
         <img class="uvodni_foto"
@@ -55,8 +88,8 @@
             alt="Mýval pekný">
     </a>
 
-    <!--seznam videí-->
-    <div>
+    <!--seznam videí CS-->
+    <div class="story" lang="cs">
         <ul class="videoList">
             <li><a href="https://www.youtube.com/watch?v=XRdPoI-PNfk&ab_channel=DailyDoseOfInternet"
                     target="_blank">Mýval, co robí bordel</a></li>
@@ -69,9 +102,23 @@
         </ul>
     </div>
 
+    <!--seznam videí EN-->
+    <div class="story" lang="en">
+        <ul class="videoList">
+            <li><a href="https://www.youtube.com/watch?v=XRdPoI-PNfk&ab_channel=DailyDoseOfInternet"
+                    target="_blank">Raccoon making a mess</a></li>
+
+            <li><a href="https://www.youtube.com/watch?v=B6e1rJO5-Cg&ab_channel=WeeklyWhiskers"
+                    target="_blank">Aggressive
+                    raccoon</a></li>
+
+            <li><a href="https://www.youtube.com/watch?v=Ofp26_oc4CA&ab_channel=JamesBlackwood-RaccoonWhisperer"
+                    target="_blank">Raccoon invasion</a></li>
+        </ul>
+    </div>
 
     <footer class="zapati">
-        <div class="zapati_zarovnani">
+        <div class="zapati_zarovnani" class="story" lang="cs">
             <ul>
                 <li>Nancy Novotná, 3. D</li>
                 <li>D23974@oa-opava.cz</li>
@@ -99,8 +146,6 @@
                 </div>
             </div>
         </div>
-
-
 
         <!--
         <div class="formy">

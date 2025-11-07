@@ -4,6 +4,23 @@ body {
     background-size: cover;
 }
 
+:root {
+    --translate-cs: "cs";
+    --translate-en: "en";
+}
+
+div.story[lang="cs"] {
+    display: none;
+}
+
+html[lang="cs"] div.story[lang="en"] {
+    display: none;
+}
+
+html[lang="cs"] div.story[lang="cs"] {
+    display: block;
+}
+
 h1 {
     margin-top: 100px;
     text-align: center;
