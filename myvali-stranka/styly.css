@@ -158,6 +158,27 @@ h2 {
 
 }
 
+.jazyky {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fi {
+    font-size: 40px;
+    border-radius: 10px;
+    border: 2px black solid;
+}
+
+.zahlavi_zarovnani {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
 .zahlavi ul li :hover a {
     color: white;
 }

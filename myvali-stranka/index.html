@@ -13,55 +13,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
 </head>
 
 <main>
+    <div class="zahlavi_zarovnani">
+        <div>
+            <header class="zahlavi">
+                <!--zahlavi CS-->
+                <div class="story" lang="cs">
+                    <ul>
+                        <li><a class="active" href="index.html"><span>Domů</span>
+                                <i class="fa-solid fa-house"></i>
+                            </a></li>
 
-    <header class="zahlavi">
-        <!--zahlavi CS-->
-        <div class="story" lang="cs">
-            <ul>
-                <li><a class="active" href="index.html"><span>Domů</span>
-                        <i class="fa-solid fa-house"></i>
-                    </a></li>
+                        <li><a href="videa.html"><span>Videa</span>
+                                <i class="fa-brands fa-youtube"></i>
+                            </a></li>
 
-                <li><a href="videa.html"><span>Videa</span>
-                        <i class="fa-brands fa-youtube"></i>
-                    </a></li>
+                        <li><a href="fotky.html"><span>Fotky</span>
+                                <i class="fa-solid fa-camera-retro"></i>
+                            </a></li>
+                        <li>
+                            <button class="music-button"><span>Hudbička</span>
+                                <i class="fa-solid fa-music"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
 
-                <li><a href="fotky.html"><span>Fotky</span>
-                        <i class="fa-solid fa-camera-retro"></i>
-                    </a></li>
-                <li>
-                    <button class="music-button"><span>Hudbička</span>
-                        <i class="fa-solid fa-music"></i>
-                    </button>
-                </li>
-            </ul>
+                <!--zahlavi EN-->
+                <div class="story" lang="en">
+                    <ul>
+                        <li><a class="active" href="index.html"><span>Home</span>
+                                <i class="fa-solid fa-house"></i>
+                            </a></li>
+
+                        <li><a href="videa.html"><span>Videos</span>
+                                <i class="fa-brands fa-youtube"></i>
+                            </a></li>
+
+                        <li><a href="fotky.html"><span>Photos</span>
+                                <i class="fa-solid fa-camera-retro"></i>
+                            </a></li>
+                        <li>
+                            <button class="music-button"><span>Music</span>
+                                <i class="fa-solid fa-music"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </header>
         </div>
 
-        <!--zahlavi EN-->
-        <div class="story" lang="en">
-            <ul>
-                <li><a class="active" href="index.html"><span>Home</span>
-                        <i class="fa-solid fa-house"></i>
-                    </a></li>
+        <div class="jazyky">
 
-                <li><a href="videa.html"><span>Videos</span>
-                        <i class="fa-brands fa-youtube"></i>
-                    </a></li>
-
-                <li><a href="fotky.html"><span>Photos</span>
-                        <i class="fa-solid fa-camera-retro"></i>
-                    </a></li>
-                <li>
-                    <button class="music-button"><span>Music</span>
-                        <i class="fa-solid fa-music"></i>
-                    </button>
-                </li>
-            </ul>
+            <!--<h3 data-lang="cs">Čeština</h3>-->
+            <span data-lang="cs" class="fi fi-cz"></span>
+            <span data-lang="en" class="fi fi-gb"></span>
+            <!--<h3 data-lang="en">English</h3>-->
         </div>
-    </header>
+    </div>
+
+
+    <script src="vymena_jazyku.js"></script>
 
     <script src="tlacitko_hudby.js"></script>
     <audio id="music" src="Who_Wants_to_be_a_Millionaire_Suspense.mp3"></audio>
