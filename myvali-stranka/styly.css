@@ -4,11 +4,6 @@ body {
     background-size: cover;
 }
 
-:root {
-    --translate-cs: "cs";
-    --translate-en: "en";
-}
-
 div.story[lang="cs"] {
     display: none;
 }

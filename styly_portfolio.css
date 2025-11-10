@@ -70,7 +70,7 @@ body {
     transition: 0.3s;
 }
 
-.zahlavi ul li:hover a{
+.zahlavi ul li:hover a {
     color: white;
 }
 
@@ -127,7 +127,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     padding: 4rem;
 }
 
@@ -271,4 +271,101 @@ footer p {
     margin: 15px 25px;
     font-family: "Oswald", sans-serif;
     color: var(--main-shade5);
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 28.75em) {
+    .zahlavi {
+        display: flex;
+        justify-content: center;
+    }
+
+    .zahlavi ul {
+        margin: 0 1rem;
+        margin-left: 4rem;
+    }
+
+    .zahlavi ul li {
+        width: fit-content;
+    }
+
+    .zahlavi ul li a {
+        font-size: 2rem;
+    }
+
+    .projekty_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nadpis_projektu {
+        margin: 0;
+    }
+
+    footer {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    .validace {
+        margin-top: 5px;
+        display: block;
+    }
+}
+
+@media (max-width: 900px) {
+    .zahlavi ul li a {
+        font-size: 2.5rem;
+    }
+
+    .uvod_nadpis {
+        font-size: 7rem;
+    }
+
+    .uvod_podnadpis {
+        font-size: 5rem;
+    }
+
+    .projekty_nadpis {
+        font-size: 9rem;
+        margin: 70px;
+    }
+
+    .projekty_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projekt {
+        width: 80%;
+    }
+
+    .nadpis_projektu {
+        font-size: 5rem;
+        margin: 0;
+    }
+
+    .obrazek_projekty {}
+
+
 }
