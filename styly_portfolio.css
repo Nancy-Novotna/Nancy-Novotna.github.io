@@ -420,34 +420,19 @@ footer p {
 }
 
 
-@media (width: 1200px) {
-    .zahlavi ul li a {
-        font-size: 2.5rem;
-    }
-
-    .uvod_nadpis {
-        font-size: 7rem;
-    }
-
-    .uvod_podnadpis {
-        font-size: 5rem;
-    }
-
-    .projekty_nadpis {
-        font-size: 9rem;
-        margin: 70px;
-    }
+@media (min-width: 1500px) {
 
     .projekty_grid {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 4rem;
+        max-width: 1080px;
+        margin: 0 auto;
     }
 
-    .projekt {
-        width: 80%;
-    }
-
-    .nadpis_projektu {
-        font-size: 5rem;
-        margin: 0;
+    .projekty {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
