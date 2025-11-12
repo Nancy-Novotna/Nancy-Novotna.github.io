@@ -291,7 +291,8 @@ footer p {
     }
 }
 
-@media (max-width: 28.75em) {
+@media (width: 412px),
+(height: 915px) {
     .zahlavi {
         display: flex;
         justify-content: center;
@@ -311,11 +312,37 @@ footer p {
     }
 
     .projekty_grid {
+        width: 100%;
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     .nadpis_projektu {
-        margin: 0;
+        margin: 5px;
+        font-size: 35px;
+    }
+
+    .slunicko {
+        display: none;
+    }
+
+    .projekt {
+        width: 100%;
+        display: block;
+    }
+
+    .ramecek:hover img {
+        transform: translate(-50%, -50%) scale(1);
+        transition: none;
+    }
+
+    .kontakty {
+        display: block;
+    }
+
+    .kontakty a {
+        margin: 30px;
+        font-size: 25px;
     }
 
     footer {
@@ -334,7 +361,66 @@ footer p {
     }
 }
 
-@media (max-width: 900px) {
+@media (width: 820px) {
+    .zahlavi {
+        display: flex;
+    }
+
+    .zahlavi ul {
+        margin: 0 1rem;
+        margin-left: 4rem;
+    }
+
+    .zahlavi ul li {
+        width: max-content;
+    }
+
+    .zahlavi ul li a {
+        font-size: 2rem;
+    }
+
+    .uvod_nadpis {
+        font-size: 70px;
+    }
+
+    .uvod_podnadpis {
+        font-size: 30px;
+    }
+
+    .projekty {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projekty_nadpis {
+        font-size: 70px;
+        margin-bottom: 70px;
+    }
+
+    .projekty_grid {
+        margin-bottom: 150px;
+        padding: 0;
+    }
+
+    .nadpis_projektu {
+        margin: 5px;
+    }
+
+    .slunicko {
+        display: none;
+    }
+
+    .kontakt_nadpis {
+        font-size: 40px;
+    }
+
+    .kontakty a {
+        font-size: 30px;
+    }
+}
+
+
+@media (width: 1200px) {
     .zahlavi ul li a {
         font-size: 2.5rem;
     }
@@ -364,8 +450,4 @@ footer p {
         font-size: 5rem;
         margin: 0;
     }
-
-    .obrazek_projekty {}
-
-
 }
