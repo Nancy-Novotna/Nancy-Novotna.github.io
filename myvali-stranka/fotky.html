@@ -13,49 +13,97 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+
 </head>
 
 <main>
     <!--záhlaví-->
-    <header class="zahlavi">
+    <div class="zahlavi_zarovnani">
         <div>
-            <ul>
-                <li><a href="index.html"><span>Domů</span>
-                        <i class="fa-solid fa-house"></i>
-                    </a></li>
+            <header class="zahlavi">
+                <!--zahlavi CS-->
+                <div class="story" lang="cs">
+                    <ul>
+                        <li><a href="index.html"><span>Domů</span>
+                                <i class="fa-solid fa-house"></i>
+                            </a></li>
 
-                <li><a href="videa.html"><span>Videa</span>
-                        <i class="fa-brands fa-youtube"></i>
-                    </a></li>
+                        <li><a href="videa.html"><span>Videa</span>
+                                <i class="fa-brands fa-youtube"></i>
+                            </a></li>
 
-                <li><a class="active" href="fotky.html"><span>Fotky</span>
-                        <i class="fa-solid fa-camera-retro"></i>
-                    </a></li>
-                <li>
-                    <button id="music-button">Hudbička
-                        <i class="fa-solid fa-music"></i>
-                    </button>
-                </li>
-            </ul>
+                        <li><a class="active" href="fotky.html"><span>Fotky</span>
+                                <i class="fa-solid fa-camera-retro"></i>
+                            </a></li>
+                        <li>
+                            <button class="music-button"><span>Hudbička</span>
+                                <i class="fa-solid fa-music"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--zahlavi EN-->
+                <div class="story" lang="en">
+                    <ul>
+                        <li><a class="active" href="index.html"><span>Home</span>
+                                <i class="fa-solid fa-house"></i>
+                            </a></li>
+
+                        <li><a href="videa.html"><span>Videos</span>
+                                <i class="fa-brands fa-youtube"></i>
+                            </a></li>
+
+                        <li><a href="fotky.html"><span>Photos</span>
+                                <i class="fa-solid fa-camera-retro"></i>
+                            </a></li>
+                        <li>
+                            <button class="music-button"><span>Music</span>
+                                <i class="fa-solid fa-music"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <div class="jazyky">
+                <!--<h3 data-lang="cs">Čeština</h3>-->
+                <span data-lang="cs" class="fi fi-cz"></span>
+                <span data-lang="en" class="fi fi-gb"></span>
+                <!--<h3 data-lang="en">English</h3>-->
+            </div>
         </div>
-    </header>
-
-    <script src="tlacitko_hudby.js"></script>
-    <audio id="music" src="Who_Wants_to_be_a_Millionaire_Suspense.mp3"></audio>
-
-
-    <h1>FOTKY</h1>
+        <script src="vymena_jazyku.js"></script>
+        <script src="tlacitko_hudby.js"></script>
+        <audio id="music" src="Who_Wants_to_be_a_Millionaire_Suspense.mp3"></audio>
 
 
-    <div class="fotos">
-        <img src="obrazky/20250213_201250.jpg" alt="myval 1">
-        <img src="obrazky/56a92983f0f1afe6513f67d81219785e.jpg" alt="myval 2">
-        <img src="obrazky/a804e6aca0ed8f4c130619a987402936.jpg" alt="myval 3">
-        <img src="obrazky/af49851a222e845641e16aaced78010c.jpg" alt="myval 4">
-    </div>
+        <h1>FOTKY</h1>
 
-    <footer class="zapati">
-        <div class="zapati_zarovnani">
+        <!--fotky CS-->
+        <div class="story" lang="cs">
+            <div class="fotos">
+                <img src="obrazky/20250213_201250.jpg" alt="myval 1">
+                <img src="obrazky/56a92983f0f1afe6513f67d81219785e.jpg" alt="myval 2">
+                <img src="obrazky/a804e6aca0ed8f4c130619a987402936.jpg" alt="myval 3">
+                <img src="obrazky/af49851a222e845641e16aaced78010c.jpg" alt="myval 4">
+            </div>
+        </div>
+
+        <!--fotky EN-->
+        <div class="story" lang="en">
+            <div class="fotos">
+                <img src="obrazky/20250213_201250.jpg" alt="raccoon 1">
+                <img src="obrazky/56a92983f0f1afe6513f67d81219785e.jpg" alt="raccoon 2">
+                <img src="obrazky/a804e6aca0ed8f4c130619a987402936.jpg" alt="raccoon 3">
+                <img src="obrazky/af49851a222e845641e16aaced78010c.jpg" alt="raccoon 4">
+            </div>
+        </div>
+
+        <footer class="zapati">
+        <div class="zapati_zarovnani" class="story" lang="cs">
             <ul>
                 <li>Nancy Novotná, 3. D</li>
                 <li>D23974@oa-opava.cz</li>
@@ -64,7 +112,7 @@
             <div class="validace">
                 <div class="w3c">
                     <p class="w3c_jednotlive">
-                        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fnancy-novotna.github.io%2Fmyvali-stranka%2Ffotky.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=cs"
+                        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fnancy-novotna.github.io%2Fmyvali-stranka%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=cs"
                             target="_blank">
                             <img style="border:0;width:88px;height:31px"
                                 src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Ověřit CSS!" />
@@ -74,7 +122,7 @@
 
                 <div class="w3c">
                     <p class="w3c_jednotlive">
-                        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fnancy-novotna.github.io%2Fmyvali-stranka%2Ffotky.html"
+                        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fnancy-novotna.github.io%2Fmyvali-stranka%2F"
                             target="_blank">
                             <img style="border:0;width:88px;height:31px"
                                 src="https://www.w3.org/Icons/valid-html20-blue" alt="Ověřit HTML!">
@@ -83,8 +131,7 @@
                 </div>
             </div>
         </div>
-
-        <!--
+            <!--
         <div class="formy">
             <form class="registrace">
                 <h4>Přihlásit se</h4>
@@ -134,7 +181,7 @@
             </div>
         </div>
     -->
-    </footer>
+        </footer>
 </main>
 
 </html>
