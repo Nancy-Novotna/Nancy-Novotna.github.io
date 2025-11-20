@@ -24,75 +24,37 @@
     <div class="zahlavi_zarovnani">
         <div>
             <header class="zahlavi">
-                <!--zahlavi CS-->
-                <div class="story" lang="cs">
-                    <ul>
-                        <li><a class="active" href="index.html"><span>Domů</span>
-                                <i class="fa-solid fa-house"></i>
-                            </a></li>
+                <ul>
+                    <li><a class="active" href="index.html"><span class="zahlavi_domu">Domů</span>
+                            <i class="fa-solid fa-house"></i>
+                        </a></li>
 
-                        <li><a href="videa.html"><span>Videa</span>
-                                <i class="fa-brands fa-youtube"></i>
-                            </a></li>
+                    <li><a href="videa.html"><span class="zahlavi_videa">Videa</span>
+                            <i class="fa-brands fa-youtube"></i>
+                        </a></li>
 
-                        <li><a href="fotky.html"><span>Fotky</span>
-                                <i class="fa-solid fa-camera-retro"></i>
-                            </a></li>
-                        <li>
-                            <button class="music-button"><span>Hudbička</span>
-                                <i class="fa-solid fa-music"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-
-                <!--zahlavi EN-->
-                <div class="story" lang="en">
-                    <ul>
-                        <li><a class="active" href="index.html"><span>Home</span>
-                                <i class="fa-solid fa-house"></i>
-                            </a></li>
-
-                        <li><a href="videa.html"><span>Videos</span>
-                                <i class="fa-brands fa-youtube"></i>
-                            </a></li>
-
-                        <li><a href="fotky.html"><span>Photos</span>
-                                <i class="fa-solid fa-camera-retro"></i>
-                            </a></li>
-                        <li>
-                            <button class="music-button"><span>Music</span>
-                                <i class="fa-solid fa-music"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+                    <li><a href="fotky.html"><span class="zahlavi_fotky">Fotky</span>
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </a></li>
+                    <li>
+                        <button class="music-button"><span class="zahlavi_hudbicka">Hudbička</span>
+                            <i class="fa-solid fa-music"></i>
+                        </button>
+                    </li>
+                </ul>
             </header>
         </div>
 
         <div class="jazyky">
-            <!--<h3 data-lang="cs">Čeština</h3>-->
             <span data-lang="cs" class="fi fi-cz" onclick="jazyk_CZ()"></span>
             <span data-lang="en" class="fi fi-gb" onclick="jazyk_EN()"></span>
-            <!--<h3 data-lang="en">English</h3>-->
         </div>
     </div>
 
-    <!-- <script src="vymena_jazyku.js"></script> -->
-    <script src="tlacitko_hudby.js"></script>
-    <audio id="music" src="Who_Wants_to_be_a_Millionaire_Suspense.mp3"></audio>
 
-    <h1>Mýval Severní</h1>
+    <h1 class="nadpis_main">Mýval Severní</h1>
 
-    <img class="cursor" src="myval_logo.svg" alt="uknown">
-
-    <div class="story" lang="cs">
-        <h2>Náhodná stránka a mývalech, protože proč ne.</h2>
-    </div>
-
-    <div class="story" lang="en">
-        <h2>Random web about raccoons because why not.</h2>
-    </div>
+    <h2 class="podnadpis_main">Náhodná stránka a mývalech, protože proč ne.</h2>
 
     <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1" target="_blank">
         <img class="uvodni_foto"
@@ -100,32 +62,17 @@
             alt="Mýval pekný">
     </a>
 
-    <!--seznam videí CS-->
-    <div class="story" lang="cs">
+    <div>
         <ul class="videoList">
-            <li><a href="https://www.youtube.com/watch?v=XRdPoI-PNfk&ab_channel=DailyDoseOfInternet"
-                    target="_blank">Mýval, co robí bordel</a></li>
+            <li><a class="videolist_1" href="https://www.youtube.com/watch?v=XRdPoI-PNfk&ab_channel=DailyDoseOfInternet"
+                    target="_blank">Mýval,
+                    co robí bordel</a></li>
 
-            <li><a href="https://www.youtube.com/watch?v=B6e1rJO5-Cg&ab_channel=WeeklyWhiskers" target="_blank">Útočný
+            <li><a class="videolist_2" href="https://www.youtube.com/watch?v=B6e1rJO5-Cg&ab_channel=WeeklyWhiskers" target="_blank">Útočný
                     mýval</a></li>
 
-            <li><a href="https://www.youtube.com/watch?v=Ofp26_oc4CA&ab_channel=JamesBlackwood-RaccoonWhisperer"
+            <li><a class="videolist_3" href="https://www.youtube.com/watch?v=Ofp26_oc4CA&ab_channel=JamesBlackwood-RaccoonWhisperer"
                     target="_blank">Mývalí okupace</a></li>
-        </ul>
-    </div>
-
-    <!--seznam videí EN-->
-    <div class="story" lang="en">
-        <ul class="videoList">
-            <li><a href="https://www.youtube.com/watch?v=XRdPoI-PNfk&ab_channel=DailyDoseOfInternet"
-                    target="_blank">Raccoon making a mess</a></li>
-
-            <li><a href="https://www.youtube.com/watch?v=B6e1rJO5-Cg&ab_channel=WeeklyWhiskers"
-                    target="_blank">Aggressive
-                    raccoon</a></li>
-
-            <li><a href="https://www.youtube.com/watch?v=Ofp26_oc4CA&ab_channel=JamesBlackwood-RaccoonWhisperer"
-                    target="_blank">Raccoon invasion</a></li>
         </ul>
     </div>
 
@@ -209,9 +156,13 @@
         -->
     </footer>
 
+    <script src="tlacitko_hudby.js"></script>
+    <audio id="music" src="Who_Wants_to_be_a_Millionaire_Suspense.mp3"></audio>
+
+    <img class="cursor" src="kurzor.png" alt="cursor">
     <script src="jazyky.js"></script>
     <script src="custom_cursor.js"></script>
-    
+
 </main>
 
 </html>

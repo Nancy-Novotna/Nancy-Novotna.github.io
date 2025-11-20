@@ -5,23 +5,16 @@ body {
     cursor: none;
 }
 
-div.story[lang="cs"] {
-    display: none;
-}
-
-html[lang="cs"] div.story[lang="en"] {
-    display: none;
-}
-
-html[lang="cs"] div.story[lang="cs"] {
-    display: block;
-}
-
 .cursor {
     width: 2rem;
     height: 2rem;
     position: fixed;
     pointer-events: none;
+    z-index: 9999;
+}
+
+a, img, .music-button{
+    cursor: none;
 }
 
 h1 {
@@ -460,4 +453,5 @@ h4 {
         flex-direction: column;
         width: 100%;
     }
+
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotky</title>
+    <title>Mývalí stránka</title>
     <link rel="stylesheet" href="styly.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,94 +25,44 @@
     <div class="zahlavi_zarovnani">
         <div>
             <header class="zahlavi">
-                <!--zahlavi CS-->
-                <div class="story" lang="cs">
-                    <ul>
-                        <li><a href="index.html"><span>Domů</span>
-                                <i class="fa-solid fa-house"></i>
-                            </a></li>
+                <ul>
+                    <li><a href="index.html"><span class="zahlavi_domu">Domů</span>
+                            <i class="fa-solid fa-house"></i>
+                        </a></li>
 
-                        <li><a href="videa.html"><span>Videa</span>
-                                <i class="fa-brands fa-youtube"></i>
-                            </a></li>
+                    <li><a href="videa.html"><span class="zahlavi_videa">Videa</span>
+                            <i class="fa-brands fa-youtube"></i>
+                        </a></li>
 
-                        <li><a class="active" href="fotky.html"><span>Fotky</span>
-                                <i class="fa-solid fa-camera-retro"></i>
-                            </a></li>
-                        <li>
-                            <button class="music-button"><span>Hudbička</span>
-                                <i class="fa-solid fa-music"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-
-                <!--zahlavi EN-->
-                <div class="story" lang="en">
-                    <ul>
-                        <li><a href="index.html"><span>Home</span>
-                                <i class="fa-solid fa-house"></i>
-                            </a></li>
-
-                        <li><a href="videa.html"><span>Videos</span>
-                                <i class="fa-brands fa-youtube"></i>
-                            </a></li>
-
-                        <li><a class="active" href="fotky.html"><span>Photos</span>
-                                <i class="fa-solid fa-camera-retro"></i>
-                            </a></li>
-                        <li>
-                            <button class="music-button"><span>Music</span>
-                                <i class="fa-solid fa-music"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+                    <li><a class="active" href="fotky.html"><span class="zahlavi_fotky">Fotky</span>
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </a></li>
+                    <li>
+                        <button class="music-button"><span class="zahlavi_hudbicka">Hudbička</span>
+                            <i class="fa-solid fa-music"></i>
+                        </button>
+                    </li>
+                </ul>
             </header>
         </div>
-
+        <!-- tlačítka na nahrazení textu -->
         <div class="jazyky">
-            <!--<h3 data-lang="cs">Čeština</h3>-->
-            <span data-lang="cs" class="fi fi-cz"></span>
-            <span data-lang="en" class="fi fi-gb"></span>
-            <!--<h3 data-lang="en">English</h3>-->
+            <span data-lang="cs" class="fi fi-cz" onclick="jazyk_CZ()"></span>
+            <span data-lang="en" class="fi fi-gb" onclick="jazyk_EN()"></span>
         </div>
     </div>
 
-    <script src="vymena_jazyku.js"></script>
-    <script src="tlacitko_hudby.js"></script>
-    <audio id="music" src="Who_Wants_to_be_a_Millionaire_Suspense.mp3"></audio>
+    <!-- nappis -->
+    <h1 class="nadpis_fotky">FOTKY</h1>
 
-    <div class="story" lang="cs">
-        <h1>FOTKY</h1>
-    </div>
-
-    <div class="story" lang="en">
-        <h1>PHOTOS</h1>
-    </div>
-
-    <img class="cursor" src="myval_logo.svg" alt="uknown">
-
-
-    <!--fotky CS-->
-    <div class="story" lang="cs">
+   
         <div class="fotos">
             <img src="obrazky/20250213_201250.jpg" alt="myval 1">
             <img src="obrazky/56a92983f0f1afe6513f67d81219785e.jpg" alt="myval 2">
             <img src="obrazky/a804e6aca0ed8f4c130619a987402936.jpg" alt="myval 3">
             <img src="obrazky/af49851a222e845641e16aaced78010c.jpg" alt="myval 4">
         </div>
-    </div>
-
-    <!--fotky EN-->
-    <div class="story" lang="en">
-        <div class="fotos">
-            <img src="obrazky/20250213_201250.jpg" alt="raccoon 1">
-            <img src="obrazky/56a92983f0f1afe6513f67d81219785e.jpg" alt="raccoon 2">
-            <img src="obrazky/a804e6aca0ed8f4c130619a987402936.jpg" alt="raccoon 3">
-            <img src="obrazky/af49851a222e845641e16aaced78010c.jpg" alt="raccoon 4">
-        </div>
-    </div>
+   
 
     <footer class="zapati">
         <div class="zapati_zarovnani">
@@ -194,7 +144,13 @@
         </div>
     -->
     </footer>
+
+    <script src="tlacitko_hudby.js"></script>
+    <audio id="music" src="Who_Wants_to_be_a_Millionaire_Suspense.mp3"></audio>
+
+    <img class="cursor" src="kurzor.png" alt="uknown">
     <script src="custom_cursor.js"></script>
+    <script src="jazyky.js"></script>
 </main>
 
 </html>

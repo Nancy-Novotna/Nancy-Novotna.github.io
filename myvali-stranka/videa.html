@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videa</title>
+    <title>Mývalí stránka</title>
     <link rel="stylesheet" href="styly.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,74 +25,35 @@
     <div class="zahlavi_zarovnani">
         <div>
             <header class="zahlavi">
-                <!--zahlavi CS-->
-                <div class="story" lang="cs">
-                    <ul>
-                        <li><a href="index.html"><span>Domů</span>
-                                <i class="fa-solid fa-house"></i>
-                            </a></li>
+                <ul>
+                    <li><a href="index.html"><span class="zahlavi_domu">Domů</span>
+                            <i class="fa-solid fa-house"></i>
+                        </a></li>
 
-                        <li><a class="active" href="videa.html"><span>Videa</span>
-                                <i class="fa-brands fa-youtube"></i>
-                            </a></li>
+                    <li><a class="active" href="videa.html"><span class="zahlavi_videa">Videa</span>
+                            <i class="fa-brands fa-youtube"></i>
+                        </a></li>
 
-                        <li><a href="fotky.html"><span>Fotky</span>
-                                <i class="fa-solid fa-camera-retro"></i>
-                            </a></li>
-                        <li>
-                            <button class="music-button"><span>Hudbička</span>
-                                <i class="fa-solid fa-music"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-
-                <!--zahlavi EN-->
-                <div class="story" lang="en">
-                    <ul>
-                        <li><a href="index.html"><span>Home</span>
-                                <i class="fa-solid fa-house"></i>
-                            </a></li>
-
-                        <li><a class="active" href="videa.html"><span>Videos</span>
-                                <i class="fa-brands fa-youtube"></i>
-                            </a></li>
-
-                        <li><a href="fotky.html"><span>Photos</span>
-                                <i class="fa-solid fa-camera-retro"></i>
-                            </a></li>
-                        <li>
-                            <button class="music-button"><span>Music</span>
-                                <i class="fa-solid fa-music"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+                    <li><a href="fotky.html"><span class="zahlavi_fotky">Fotky</span>
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </a></li>
+                    <li>
+                        <button class="music-button"><span class="zahlavi_hudbicka">Hudbička</span>
+                            <i class="fa-solid fa-music"></i>
+                        </button>
+                    </li>
+                </ul>
             </header>
         </div>
+
         <div class="jazyky">
-            <!--<h3 data-lang="cs">Čeština</h3>-->
-            <span data-lang="cs" class="fi fi-cz"></span>
-            <span data-lang="en" class="fi fi-gb"></span>
-            <!--<h3 data-lang="en">English</h3>-->
+            <span data-lang="cs" class="fi fi-cz" onclick="jazyk_CZ()"></span>
+            <span data-lang="en" class="fi fi-gb" onclick="jazyk_EN()"></span>
         </div>
     </div>
 
-    <div class="story" lang="cs">
-        <h1>VIDEA</h1>
-    </div>
 
-    <div class="story" lang="en">
-        <h1>VIDEOS</h1>
-    </div>
-
-    <img class="cursor" src="myval_logo.svg" alt="uknown">
-
-
-    <script src="vymena_jazyku.js"></script>
-    <script src="tlacitko_hudby.js"></script>
-    <audio id="music" src="Who_Wants_to_be_a_Millionaire_Suspense.mp3"></audio>
-
+    <h1 class="nadpis_videa">VIDEA</h1>
 
     <div class="videos">
         <iframe width=500 height=300 src="https://www.youtube.com/embed/JeioTbsWq3c"></iframe>
@@ -185,7 +146,13 @@
         </div>
         -->
     </footer>
+
+    <script src="tlacitko_hudby.js"></script>
+    <audio id="music" src="Who_Wants_to_be_a_Millionaire_Suspense.mp3"></audio>
+
+    <img class="cursor" src="kurzor.png" alt="uknown">
     <script src="custom_cursor.js"></script>
+    <script src="jazyky.js"></script>
 </main>
 
 </html>
