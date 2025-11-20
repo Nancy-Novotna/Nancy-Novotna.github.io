@@ -14,7 +14,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
 
     <link rel="icon" type="image/svg+xml" href="myval_logo.svg">
 
@@ -72,23 +72,19 @@
 
         <div class="jazyky">
             <!--<h3 data-lang="cs">Čeština</h3>-->
-            <span data-lang="cs" class="fi fi-cz"></span>
-            <span data-lang="en" class="fi fi-gb"></span>
+            <span data-lang="cs" class="fi fi-cz" onclick="jazyk_CZ()"></span>
+            <span data-lang="en" class="fi fi-gb" onclick="jazyk_EN()"></span>
             <!--<h3 data-lang="en">English</h3>-->
         </div>
     </div>
 
-    <script src="vymena_jazyku.js"></script>
+    <!-- <script src="vymena_jazyku.js"></script> -->
     <script src="tlacitko_hudby.js"></script>
     <audio id="music" src="Who_Wants_to_be_a_Millionaire_Suspense.mp3"></audio>
 
+    <h1>Mýval Severní</h1>
 
-    <div class="story" lang="cs">
-        <h1>Mýval Severní</h1>
-    </div>
-    <div class="story" lang="en">
-        <h1>Raccoon</h1>
-    </div>
+    <img class="cursor" src="myval_logo.svg" alt="uknown">
 
     <div class="story" lang="cs">
         <h2>Náhodná stránka a mývalech, protože proč ne.</h2>
@@ -135,10 +131,10 @@
 
     <footer class="zapati">
         <div class="zapati_zarovnani">
-                <ul>
-                    <li>Nancy Novotná, 3. D</li>
-                    <li>D23974@oa-opava.cz</li>
-                </ul>
+            <ul>
+                <li>Nancy Novotná, 3. D</li>
+                <li>D23974@oa-opava.cz</li>
+            </ul>
             <div class="validace">
                 <div class="w3c">
                     <p class="w3c_jednotlive">
@@ -213,7 +209,9 @@
         -->
     </footer>
 
-
+    <script src="jazyky.js"></script>
+    <script src="custom_cursor.js"></script>
+    
 </main>
 
 </html>

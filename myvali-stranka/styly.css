@@ -2,6 +2,7 @@ body {
     text-align: center;
     background-image: url(les_background.jpg);
     background-size: cover;
+    cursor: none;
 }
 
 div.story[lang="cs"] {
@@ -14,6 +15,13 @@ html[lang="cs"] div.story[lang="en"] {
 
 html[lang="cs"] div.story[lang="cs"] {
     display: block;
+}
+
+.cursor {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    pointer-events: none;
 }
 
 h1 {
