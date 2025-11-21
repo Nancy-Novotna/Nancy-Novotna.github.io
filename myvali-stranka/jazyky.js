@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function jazyk_CZ() {
         document.querySelector('.zahlavi_hudbicka').innerHTML = 'Hudbička'            
 // INDEX
         document.querySelector('.nadpis_main').innerHTML = 'Mýval Severní'
-        document.querySelector('.podnadpis_main').innerHTML = 'Náhodná stránka a mývalech,
+        document.querySelector('.podnadpis_main').innerHTML = 'Náhodná stránka a mývalech, protože proč ne'
         document.querySelector('.videolist_1').innerHTML = 'Mýval, co robí bordel'
         document.querySelector('.videolist_2').innerHTML = 'Útočný mýval'
         document.querySelector('.videolist_3').innerHTML = 'Mývalí okupace'
