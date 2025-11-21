@@ -36,6 +36,7 @@ function jazyk_CZ() {
         document.querySelector('.nadpis_fotky').innerHTML = 'FOTKY'
     }
 };
+}
         
 
 function jazyk_EN() {
@@ -78,6 +79,7 @@ function jazyk_EN() {
        
 
 };
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     const ulozeny_jazyk = localStorage.getItem('jazyk');
