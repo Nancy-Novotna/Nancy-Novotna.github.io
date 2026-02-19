@@ -297,7 +297,7 @@ footer p {
 @media (min-width: 1100px) {
 
     .projekty {
-        height: 250vh;
+        height: fit-content;
     }
 
     .ramecek {
